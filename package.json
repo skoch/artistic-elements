@@ -1,0 +1,38 @@
+{
+  "name": "artistic-elements",
+  "version": "0.1.0",
+  "description": "artistic web components",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick",
+    "pre-commit": "pretty-quick --staged"
+  },
+  "dependencies": {
+    "lit": "^2.4.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.8.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skoch/artistic-elements.git"
+  },
+  "keywords": [
+    "art",
+    "artistic",
+    "web",
+    "components"
+  ],
+  "author": "stephen@koch.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skoch/artistic-elements/issues"
+  },
+  "homepage": "https://github.com/skoch/artistic-elements#readme"
+}
