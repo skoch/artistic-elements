@@ -1,1 +1,6 @@
+.husky
+.prettierrc
+.nvmrc
+
 src
+tsconfig.json
