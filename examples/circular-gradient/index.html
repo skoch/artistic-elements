@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>artistic-circular-gradient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+      media="all"
+    />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222324;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script
+      type="module"
+      src="../../dist/artistic/circular-gradient.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <artistic-circular-gradient color="#439dc8" color2="#377e49" angle="0deg">
+      </artistic-circular-gradient>
+      <artistic-circular-gradient
+        color="#439dc8"
+        color2="#377e49"
+        angle="90deg"
+      >
+      </artistic-circular-gradient>
+    </main>
+  </body>
+</html>

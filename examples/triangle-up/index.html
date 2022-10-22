@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>artistic-triangle-up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+      media="all"
+    />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222324;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script type="module" src="../../dist/artistic/triangle-up.js"></script>
+  </head>
+  <body>
+    <main>
+      <artistic-triangle-up color="#f4a261"></artistic-triangle-up>
+      <artistic-triangle-up
+        color="#f4a261"
+        widthRight="0"
+      ></artistic-triangle-up>
+      <artistic-triangle-up
+        widthLeft="0"
+        color="#343536"
+      ></artistic-triangle-up>
+      <artistic-triangle-up color="#343536"></artistic-triangle-up>
+      <artistic-triangle-up
+        widthRight="0"
+        color="#343536"
+      ></artistic-triangle-up>
+      <artistic-triangle-up color="#e9c46a" widthLeft="0">
+      </artistic-triangle-up>
+    </main>
+  </body>
+</html>

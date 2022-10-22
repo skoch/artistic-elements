@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>artistic-doughnut</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+      media="all"
+    />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222324;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script type="module" src="../../dist/artistic/doughnut.js"></script>
+  </head>
+  <body>
+    <main>
+      <artistic-doughnut diameter="25" lineWidth="2.5" color="#dc3d2c">
+        <artistic-doughnut diameter="12.5" lineWidth="1" color="#a49206">
+        </artistic-doughnut>
+      </artistic-doughnut>
+    </main>
+  </body>
+</html>

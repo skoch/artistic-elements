@@ -16,7 +16,7 @@ export class ArtisticDoughnut extends LitElement {
   diameter = 10;
 
   @property()
-  lineWidth = 10;
+  lineWidth = 1;
 
   @property()
   color = '#f0f';
