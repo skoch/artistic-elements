@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>artistic-rectangle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+      media="all"
+    />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222324;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script type="module" src="../../dist/artistic/rectangle.js"></script>
+  </head>
+  <body>
+    <main>
+      <artistic-rectangle width="20rem" height="20rem" color="#8db74a">
+        <artistic-rectangle
+          width="5%"
+          height="100%"
+          color="#dc3c2b"
+        ></artistic-rectangle>
+      </artistic-rectangle>
+      <artistic-rectangle width="20rem" height="20rem" color="#dc3c2b">
+        <artistic-rectangle
+          width="40%"
+          height="100%"
+          color="#8db74a"
+        ></artistic-rectangle>
+      </artistic-rectangle>
+    </main>
+  </body>
+</html>
