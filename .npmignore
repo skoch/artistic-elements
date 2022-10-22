@@ -3,4 +3,5 @@
 .nvmrc
 
 src
+examples
 tsconfig.json
