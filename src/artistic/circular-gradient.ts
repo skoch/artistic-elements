@@ -1,8 +1,8 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('artistic-circle-gradient')
-export class ArtisticCircleGradient extends LitElement {
+@customElement('artistic-circular-gradient')
+export class ArtisticCircularGradient extends LitElement {
   static styles = css`
     :host {
       display: contents;
@@ -51,6 +51,6 @@ export class ArtisticCircleGradient extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'artistic-circle-gradient': ArtisticCircleGradient;
+    'artistic-circular-gradient': ArtisticCircularGradient;
   }
 }

@@ -11,13 +11,13 @@ export class ArtisticTriangleUp extends LitElement {
   `;
 
   @property()
-  widthLeft = '10rem';
+  widthLeft = '5rem';
 
   @property()
-  widthRight = '10rem';
+  widthRight = '5rem';
 
   @property()
-  height = '20rem';
+  height = '10rem';
 
   @property()
   color = '#f0f';

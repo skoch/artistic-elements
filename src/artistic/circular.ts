@@ -1,8 +1,8 @@
 import { html, css, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('artistic-circle')
-export class ArtisticCircle extends LitElement {
+@customElement('artistic-circular')
+export class ArtisticCircular extends LitElement {
   static styles = css`
     div {
       border-radius: 50%;
@@ -13,15 +13,18 @@ export class ArtisticCircle extends LitElement {
   `;
 
   @property()
-  size = '10rem';
+  width = '10rem';
+
+  @property()
+  height = '10rem';
 
   @property()
   color = '#f0f';
 
   render() {
     const style = `
-      width: ${this.size};
-      height: ${this.size};
+      width: ${this.width};
+      height: ${this.height};
       background: ${this.color};
     `;
     return html`<div style="${style}">
@@ -32,6 +35,6 @@ export class ArtisticCircle extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'artistic-circle': ArtisticCircle;
+    'artistic-circle': ArtisticCircular;
   }
 }

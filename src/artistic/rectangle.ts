@@ -11,15 +11,14 @@ export class ArtisticRectangle extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      /* flex-wrap: wrap; */
     }
   `;
 
   @property()
-  width = 100;
+  width = '10rem';
 
   @property()
-  height = 100;
+  height = '10rem';
 
   @property()
   color = '#f0f';

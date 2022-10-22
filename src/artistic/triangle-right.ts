@@ -11,22 +11,22 @@ export class ArtisticTriangleRight extends LitElement {
   `;
 
   @property()
-  widthTop = '10rem';
+  heightTop = '5rem';
 
   @property()
-  widthBottom = '10rem';
+  heightBottom = '5rem';
 
   @property()
-  width = '20rem';
+  width = '10rem';
 
   @property()
   color = '#f0f';
 
   render() {
     const style = `
-      border-top: ${this.widthTop} solid transparent;
+      border-top: ${this.heightTop} solid transparent;
       border-left: ${this.width} solid ${this.color};
-      border-bottom: ${this.widthBottom} solid transparent;
+      border-bottom: ${this.heightBottom} solid transparent;
     `;
     return html`<div style="${style}">
       <slot></slot>
