@@ -1,5 +1,7 @@
 # Artistic Elements
 
+![rectangles](examples/rectangles-00.jpg)
+
 Artistic Elements is a collection of very simple [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) to create art.
 
 This project was born out of wanting to learn about:
@@ -10,7 +12,7 @@ This project was born out of wanting to learn about:
    1. [rollup.js](https://rollupjs.org/guide/en/)
    2. [@web/dev-server](https://modern-web.dev/docs/dev-server/overview/)
 
-These artistic components were a result of, years ago, creating [swi{css}ted](https://swissted.koch.dev) with Styled Components in React and then using that work as the base for these Web Components which are Lit components.
+These artistic components were a result of, years ago, creating [swi{css}ted](https://swissted.koch.dev) with Styled Components in React and then using that work as the base for these ([Lit](https://lit.dev/)) Web Components.
 
 ## Development
 
@@ -20,6 +22,23 @@ To view examples:
 npm i
 npm run dev
 ```
+
+Open [localhost:8000](http://localhost:8000/examples) to view available components.
+
+### Contributing
+
+Feel the need to add a new component? Awesome. Follow these basic steps:
+
+1. Create a new branch from `develop`
+2. Create a new Lit component in `src/artistic`
+   1. `src/artistic/my-component`
+3. Update `src/index.ts` to export your new component
+   1. `export { ArtisticMyComponent } from './artistic/my-component';`
+4. Update `examples/index.html` to include your component following the pattern found in the file
+5. Create a new example file with some examples using attributes
+6. Update the README to include the necessary details
+7. Open a pull request to `develop`
+   1. Be sure to include a screenshot of your new component in the PR.
 
 ## Import
 
@@ -50,13 +69,11 @@ To create a circle, use the same values for `width` and `height`.
 
 #### Attributes
 
-```json
-{
-  width: string,
-  height: string,
-  color: string,
-}
-```
+| Attribute | Description   | Type     | Default |
+| --------- | ------------- | -------- | ------- |
+| width     | object width  | `string` | '10rem' |
+| height    | object height | `string` | '10rem' |
+| color     | object color  | `string` | '#f0f'  |
 
 #### Import
 
@@ -105,15 +122,13 @@ To create a circle, use the same values for `width` and `height`.
 
 #### Attributes
 
-```json
-{
-  width: string,
-  height: string,
-  angle: string,
-  color: string,
-  color2: string,
-}
-```
+| Attribute | Description         | Type     | Default |
+| --------- | ------------------- | -------- | ------- |
+| width     | object width        | `string` | '10rem' |
+| height    | object height       | `string` | '10rem' |
+| angle     | object rotation     | `string` | '0deg'  |
+| color     | object first color  | `string` | '#f0f'  |
+| color2    | object second color | `string` | '#0f0'  |
 
 #### Import
 
@@ -170,15 +185,13 @@ Ability to position absolutely if either a top or left value is supplied.
 
 #### Attributes
 
-```json
-{
-  diameter: number,
-  lineWidth: number,
-  color: string,
-  top: string,
-  left: string,
-}
-```
+| Attribute | Description          | Type     | Default |
+| --------- | -------------------- | -------- | ------- |
+| diameter  | object diameter      | `number` | 10      |
+| lineWidth | object border width  | `number` | 1       |
+| color     | object color         | `string` | '#f0f'  |
+| top       | object top position  | `string` | '0'     |
+| left      | object left position | `string` | '0'     |
 
 #### Import
 
@@ -223,16 +236,14 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-```json
-{
-  width: string,
-  height: string,
-  color: string,
-  top: string,
-  left: string,
-  align: string,
-}
-```
+| Attribute | Description          | Type     | default   |
+| --------- | -------------------- | -------- | --------- |
+| width     | object width         | `string` | '10rem'   |
+| height    | object height        | `string` | '10rem'   |
+| color     | object color         | `string` | '#f0f'    |
+| top       | object top position  | `string` | '0'       |
+| left      | object left position | `string` | '0'       |
+| align     | object alignment     | `string` | 'initial' |
 
 #### Import
 
@@ -283,18 +294,16 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-```json
-{
-  width: string,
-  height: string,
-  angle: string,
-  color: string,
-  color2: string,
-  top: string,
-  left: string,
-  align: string,
-}
-```
+| Attribute | Description          | Type     | default   |
+| --------- | -------------------- | -------- | --------- |
+| width     | object width         | `string` | '10rem'   |
+| height    | object height        | `string` | '10rem'   |
+| angle     | object rotation      | `string` | '0deg'    |
+| color     | object first color   | `string` | '#f0f'    |
+| color2    | object second color  | `string` | '#0f0'    |
+| top       | object top position  | `string` | '0'       |
+| left      | object left position | `string` | '0'       |
+| align     | object alignment     | `string` | 'initial' |
 
 #### Import
 
@@ -347,17 +356,15 @@ The colors map to each of the borders (top, right, bottom, left).
 
 #### Attributes
 
-```json
-{
-  width: number,
-  height: number,
-  borderStyle: string,
-  topColor: string,
-  rightColor: string,
-  bottomColor: string,
-  leftColor: string,
-}
-```
+| Attribute   | Description           | Type     | Default |
+| ----------- | --------------------- | -------- | ------- |
+| width       | object width          | `number` | 10      |
+| height      | object height         | `number` | 10      |
+| borderStyle | object border-style   | `string` | 'solid' |
+| topColor    | top triangle color    | `string` | '#f0f'  |
+| rightColor  | right triangle color  | `string` | '#0f0'  |
+| bottomColor | bottom triangle color | `string` | '#ff0'  |
+| leftColor   | left triangle color   | `string` | '#00f'  |
 
 #### Import
 
@@ -414,14 +421,12 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 
 #### Attributes
 
-```json
-{
-  widthLeft: string,
-  widthRight: string,
-  height: string,
-  color: string,
-}
-```
+| Attribute  | Description             | Type     | Default |
+| ---------- | ----------------------- | -------- | ------- |
+| widthLeft  | object left side width  | `string` | '5rem'  |
+| widthRight | object right side width | `string` | '5rem'  |
+| height     | object height           | `string` | '10rem' |
+| color      | object color            | `string` | '#0f0'  |
 
 #### Import
 
@@ -474,14 +479,12 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 
 #### Attributes
 
-```json
-{
-  widthLeft: string,
-  widthRight: string,
-  height: string,
-  color: string,
-}
-```
+| Attribute  | Description             | Type     | Default |
+| ---------- | ----------------------- | -------- | ------- |
+| widthLeft  | object left side width  | `string` | '5rem'  |
+| widthRight | object right side width | `string` | '5rem'  |
+| height     | object height           | `string` | '10rem' |
+| color      | object color            | `string` | '#0f0'  |
 
 #### Import
 
@@ -534,14 +537,12 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 
 #### Attributes
 
-```json
-{
-  heightTop: string,
-  heightBottom: string,
-  width: string,
-  color: string,
-}
-```
+| Attribute    | Description             | Type     | Default |
+| ------------ | ----------------------- | -------- | ------- |
+| heightTop    | object left side width  | `string` | '5rem'  |
+| heightBottom | object right side width | `string` | '5rem'  |
+| width        | object height           | `string` | '10rem' |
+| color        | object color            | `string` | '#0f0'  |
 
 #### Import
 
@@ -594,14 +595,12 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 
 #### Attributes
 
-```json
-{
-  heightTop: string,
-  heightBottom: string,
-  width: string,
-  color: string,
-}
-```
+| Attribute    | Description             | Type     | Default |
+| ------------ | ----------------------- | -------- | ------- |
+| heightTop    | object left side width  | `string` | '5rem'  |
+| heightBottom | object right side width | `string` | '5rem'  |
+| width        | object height           | `string` | '10rem' |
+| color        | object color            | `string` | '#0f0'  |
 
 #### Import
 
