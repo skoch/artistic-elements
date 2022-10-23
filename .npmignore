@@ -1,6 +1,7 @@
 .husky
 .prettierrc
 .nvmrc
+.vscode
 
 src
 examples
