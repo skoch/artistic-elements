@@ -1,6 +1,6 @@
 {
   "name": "artistic-elements",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "artistic web components",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -38,7 +38,7 @@
     "components"
   ],
   "author": "stephen@koch.dev",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/skoch/artistic-elements/issues"
   },
