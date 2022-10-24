@@ -38,7 +38,7 @@
     "components"
   ],
   "author": "stephen@koch.dev",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/skoch/artistic-elements/issues"
   },
