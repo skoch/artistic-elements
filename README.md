@@ -1,5 +1,10 @@
 # Artistic Elements
 
+![](https://flat.badgen.net/npm/v/artistic-elements)
+[![](https://data.jsdelivr.com/v1/package/npm/artistic-elements/badge)](https://www.jsdelivr.com/package/npm/artistic-elements)
+![](https://flat.badgen.net/npm/dm/artistic-elements)
+![](https://flat.badgen.net/npm/license/artistic-elements)
+
 ![rectangles](examples/rectangles-00.jpg)
 
 Artistic Elements is a collection of very simple [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) to create art.
