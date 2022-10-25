@@ -3,7 +3,6 @@
     "experimentalDecorators": true,
     "rootDir": "./src",
     "outDir": "./dist",
-    "allowJs": true,
     "moduleResolution": "node",
     "declaration": true,
     "target": "es2019"

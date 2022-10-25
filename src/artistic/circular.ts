@@ -35,6 +35,6 @@ export class ArtisticCircular extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'artistic-circle': ArtisticCircular;
+    'artistic-circular': ArtisticCircular;
   }
 }
