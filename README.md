@@ -47,7 +47,7 @@ Importing via the CDN is as simple as including the index as a module in your HT
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@0.2.6-1/dist/index.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@0.2.6-1/dist/index.min.js"
 ></script>
 ```
 
