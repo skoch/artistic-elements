@@ -43,16 +43,24 @@ Feel the need to add a new component? Awesome. Follow these basic steps:
 5. Create a new example file with some examples using attributes
 6. Update the README to include the necessary details
 7. Open a pull request to `develop`
-   1. Be sure to include a screenshot of your new component in the PR.
+   1. Be sure to include a screenshot of your new component in the pull request.
+
+## In Use
+
+Using it and want to show your art? Open up a pull request to update this section by adding to the list.
+
+1. [swissted](https://swissted.koch.dev/)
 
 ## Import
 
 Importing via the CDN is as simple as including the index as a module in your HTML. This includes all the components.
 
+_Note: all \*js files have been minified._
+
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@0.3.0/dist/index.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@0.3.0/dist/index.js"
 ></script>
 ```
 
@@ -89,15 +97,10 @@ To create a circle, use the same values for `width` and `height`.
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-circular></artistic-circular>
-```
-
-#### Using Attributes
-
-```html
 <artistic-circular
   width="20rem"
   height="20rem"
@@ -121,7 +124,7 @@ document.querySelector('main').append(circle);
 
 A simple circular object with two colors, each color using 50% of the object.
 
-Supply an angle in degress to rotate.
+Supply an angle in degrees to rotate.
 
 To create a circle, use the same values for `width` and `height`.
 
@@ -144,15 +147,10 @@ To create a circle, use the same values for `width` and `height`.
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-circular-gradient></artistic-circular-gradient>
-```
-
-#### Using Attributes
-
-```html
 <artistic-circular-gradient
   width="20rem"
   height="20rem"
@@ -207,15 +205,10 @@ Ability to position absolutely if either a top or left value is supplied.
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-doughnut></artistic-doughnut>
-```
-
-#### Using Attributes
-
-```html
 <artistic-doughnut diameter="25" lineWidth="5" color="#000"></artistic-doughnut>
 ```
 
@@ -259,15 +252,10 @@ Ability to `align` which maps to `align-self` for flexbox.
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-rectangle></artistic-rectangle>
-```
-
-#### Using Attributes
-
-```html
 <artistic-rectangle
   width="60rem"
   height="5rem"
@@ -319,15 +307,10 @@ Ability to `align` which maps to `align-self` for flexbox.
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-rectangle-gradient></artistic-rectangle-gradient>
-```
-
-#### Using Attributes
-
-```html
 <artistic-rectangle-gradient
   width="60rem"
   height="5rem"
@@ -380,15 +363,10 @@ The colors map to each of the borders (top, right, bottom, left).
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-triangle-rectangle></artistic-triangle-rectangle>
-```
-
-#### Using Attributes
-
-```html
 <artistic-triangle-rectangle
   width="20"
   height="20"
@@ -442,15 +420,10 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-triangle-up></artistic-triangle-up>
-```
-
-#### Using Attributes
-
-```html
 <artistic-triangle-up
   widthLeft="10rem"
   widthRight="10rem"
@@ -500,15 +473,10 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-triangle-down></artistic-triangle-down>
-```
-
-#### Using Attributes
-
-```html
 <artistic-triangle-down
   widthLeft="10rem"
   widthRight="10rem"
@@ -558,15 +526,10 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-triangle-left></artistic-triangle-left>
-```
-
-#### Using Attributes
-
-```html
 <artistic-triangle-left
   heightTop="10rem"
   heightBottom="10rem"
@@ -616,15 +579,10 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ></script>
 ```
 
-#### Default
+#### HTML
 
 ```html
 <artistic-triangle-right></artistic-triangle-right>
-```
-
-#### Using Attributes
-
-```html
 <artistic-triangle-right
   heightTop="10rem"
   heightBottom="10rem"
