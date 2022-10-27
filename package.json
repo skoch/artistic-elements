@@ -1,6 +1,6 @@
 {
   "name": "artistic-elements",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "artistic web components",
   "main": "dist/index.js",
   "module": "dist/index.js",
