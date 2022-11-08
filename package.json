@@ -4,30 +4,42 @@
   "description": "artistic web components",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start:clean": "run-s clean dev",
     "start": "npm run dev",
     "dev": "run-p watch:*",
     "watch:ts": "tsc --watch",
     "watch:serve": "wds --node-resolve --watch",
-    "build": "run-s clean bundle",
-    "clean": "rimraf dist",
-    "bundle": "rollup -c --context this",
+    "clean": "rimraf dist src/react",
+    "build": "node scripts/build.js --bundle --types",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick",
     "pre-commit": "pretty-quick --staged"
   },
   "dependencies": {
+    "@lit-labs/react": "^1.1.0",
     "lit": "^2.4.0"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.6.6",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
+    "@types/react": "^18.0.25",
     "@web/dev-server": "^0.1.34",
+    "command-line-args": "^5.2.1",
+    "del": "^7.0.0",
+    "esbuild": "^0.15.13",
+    "globby": "^13.1.2",
     "husky": "^8.0.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
+    "react": "^18.2.0",
     "rimraf": "^3.0.2",
     "rollup-plugin-minify-html-literals": "^1.2.6",
     "rollup-plugin-summary": "^1.4.3",
@@ -42,7 +54,8 @@
   "keywords": [
     "art",
     "artistic",
-    "web",
+    "web components",
+    "custom elements",
     "components"
   ],
   "author": "stephen@koch.dev",
