@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "experimentalDecorators": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
+    "target": "es2019",
+    "module": "es2015",
     "moduleResolution": "node",
+    "lib": ["es2019", "dom"],
     "declaration": true,
-    "target": "es2019"
+    "declarationMap": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules"]

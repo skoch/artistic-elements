@@ -60,16 +60,22 @@ _Note: all \*js files have been minified._
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/index.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/index.js"
 ></script>
 ```
 
 Cherry picking is also possible by targeting the specific component. See examples below.
 
-Importing via Javascript where the `*` is one of the available component names: `Circular`, `Rectangle`, etc.
+Importing for JavaScript where the `*` is one of the available component names: `Circular`, `Rectangle`, etc.
 
 ```javascript
 import { Artistic* } from 'artistic-elements';
+```
+
+Importing for React where the `*` is one of the available component names: `Circular`, `Rectangle`, etc.
+
+```jsx
+import { Artistic* } from 'artistic-elements/dist/react';
 ```
 
 ## Components
@@ -93,7 +99,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/circular.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/circular.js"
 ></script>
 ```
 
@@ -111,13 +117,22 @@ To create a circle, use the same values for `width` and `height`.
 #### Javascript API
 
 ```javascript
-import { ArtisticCircle } from 'artistic-elements';
+import { ArtisticCirular } from 'artistic-elements';
 
-const circle = new ArtisticCircle();
+const circle = new ArtisticCirular();
 circle.width = '20rem';
 circle.height = '20rem';
 circle.color = '#fff';
 document.querySelector('main').append(circle);
+```
+
+#### React API
+
+```jsx
+import { ArtisticCircular } from 'artistic-elements/dist/react';
+
+<ArtisticCircular />
+<ArtisticCircular width="20rem" height="20rem" color="#fff" />
 ```
 
 ### Circular Gradient
@@ -143,7 +158,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/circular-gradient.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/circular-gradient.js"
 ></script>
 ```
 
@@ -174,6 +189,21 @@ circleGradient.angle = '90deg';
 document.querySelector('main').append(circleGradient);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticCircularGradient } from 'artistic-elements/dist/react';
+
+<ArtisticCircularGradient />
+<ArtisticCircularGradient
+  width="20rem"
+  height="20rem"
+  color="#fff"
+  color2="#000"
+  angle="90deg"
+/>
+```
+
 ### Doughnut
 
 A circle with a hole and a single color.
@@ -201,7 +231,7 @@ Ability to position absolutely if either a top or left value is supplied.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/doughnut.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/doughnut.js"
 ></script>
 ```
 
@@ -222,6 +252,15 @@ doughnut.diameter = 25;
 doughnut.height = 5;
 doughnut.color = '#fff';
 document.querySelector('main').append(doughnut);
+```
+
+#### React API
+
+```jsx
+import { ArtisticDoughnut } from 'artistic-elements/dist/react';
+
+<ArtisticDoughnut />
+<ArtisticDoughnut diameter={25} height={5} color="#fff" />
 ```
 
 ### Rectangle
@@ -248,7 +287,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/rectangle.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/rectangle.js"
 ></script>
 ```
 
@@ -277,6 +316,20 @@ rectangle.align = 'end';
 document.querySelector('main').append(rectangle);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticRectangular } from 'artistic-elements/dist/react';
+
+<ArtisticRectangular />
+<ArtisticRectangular
+  width="60rem"
+  height="5rem"
+  color="#000"
+  align="end"
+/>
+```
+
 ### Rectangle Gradient
 
 A simple rectangular object with two colors, each color using 50% of the object.
@@ -303,7 +356,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/rectangle-gradient.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/rectangle-gradient.js"
 ></script>
 ```
 
@@ -330,6 +383,20 @@ rectangleGradient.height = '5rem';
 rectangleGradient.color = '#000';
 rectangleGradient.color2 = '#fff';
 document.querySelector('main').append(rectangleGradient);
+```
+
+#### React API
+
+```jsx
+import { ArtisticRectangleGradient } from 'artistic-elements/dist/react';
+
+<ArtisticRectangleGradient />
+<ArtisticRectangleGradient
+  width="60rem"
+  height="5rem"
+  color="#000"
+  color2="fff"
+/>
 ```
 
 ### Triangle Rectangle
@@ -359,7 +426,7 @@ The colors map to each of the borders (top, right, bottom, left).
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/triangle-rectangle.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-rectangle.js"
 ></script>
 ```
 
@@ -392,6 +459,22 @@ square.leftColor = '#63fd86';
 document.querySelector('main').append(square);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticTriangleRectangular } from 'artistic-elements/dist/react';
+
+<ArtisticTriangleRectangular />
+<ArtisticTriangleRectangular
+  width={20}
+  height={20}
+  topColor="#63fd86"
+  rightColor="#8601ff"
+  bottomColor="#35e8c2"
+  leftColor="#63fd86"
+/>
+```
+
 ### Triangle Up
 
 [CSS border trick](https://css-tricks.com/snippets/css/css-triangle/) to create a triangle object that points up with a single color.
@@ -416,7 +499,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/triangle-up.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-up.js"
 ></script>
 ```
 
@@ -445,6 +528,20 @@ triangleUp.color = '#fff';
 document.querySelector('main').append(triangleUp);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticTriangleUp } from 'artistic-elements/dist/react';
+
+<ArtisticTriangleUp />
+<ArtisticTriangleUp
+  widthLeft="10rem"
+  widthRight="10rem"
+  height="20rem"
+  color="#fff"
+/>
+```
+
 ### Triangle Down
 
 [CSS border trick](https://css-tricks.com/snippets/css/css-triangle/) to create a triangle object that points down with a single color.
@@ -469,7 +566,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/triangle-down.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-down.js"
 ></script>
 ```
 
@@ -498,6 +595,20 @@ triangleDown.color = '#fff';
 document.querySelector('main').append(triangleDown);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticTriangleDown } from 'artistic-elements/dist/react';
+
+<ArtisticTriangleDown />
+<ArtisticTriangleDown
+  widthLeft="10rem"
+  widthRight="10rem"
+  height="20rem"
+  color="#fff"
+/>
+```
+
 ### Triangle Left
 
 [CSS border trick](https://css-tricks.com/snippets/css/css-triangle/) to create a triangle object that points to the left with a single color.
@@ -522,7 +633,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/triangle-left.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-left.js"
 ></script>
 ```
 
@@ -551,6 +662,20 @@ triangleDown.color = '#fff';
 document.querySelector('main').append(triangleDown);
 ```
 
+#### React API
+
+```jsx
+import { ArtisticTriangleLeft } from 'artistic-elements/dist/react';
+
+<ArtisticTriangleLeft />
+<ArtisticTriangleLeft
+  heightTop="10rem"
+  heightBottom="10rem"
+  width="20rem"
+  color="#fff"
+/>
+```
+
 ### Triangle Right
 
 [CSS border trick](https://css-tricks.com/snippets/css/css-triangle/) to create a triangle object that points to the right with a single color.
@@ -575,7 +700,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.0.1/dist/triangle-right.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-right.js"
 ></script>
 ```
 
@@ -602,4 +727,18 @@ triangleRight.heightBottom = '10rem';
 triangleRight.width = '20rem';
 triangleRight.color = '#fff';
 document.querySelector('main').append(triangleRight);
+```
+
+#### React API
+
+```jsx
+import { ArtisticTriangleRight } from 'artistic-elements/dist/react';
+
+<ArtisticTriangleRight />
+<ArtisticTriangleRight
+  heightTop="10rem"
+  heightBottom="10rem"
+  width="20rem"
+  color="#fff"
+/>
 ```
