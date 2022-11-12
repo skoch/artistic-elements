@@ -60,7 +60,7 @@ _Note: all \*js files have been minified._
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/index.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/index.js"
 ></script>
 ```
 
@@ -99,7 +99,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/circular.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/circular.js"
 ></script>
 ```
 
@@ -158,7 +158,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/circular-gradient.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/circular-gradient.js"
 ></script>
 ```
 
@@ -231,7 +231,7 @@ Ability to position absolutely if either a top or left value is supplied.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/doughnut.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/doughnut.js"
 ></script>
 ```
 
@@ -287,7 +287,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/rectangle.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/rectangle.js"
 ></script>
 ```
 
@@ -356,7 +356,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/rectangle-gradient.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/rectangle-gradient.js"
 ></script>
 ```
 
@@ -426,7 +426,7 @@ The colors map to each of the borders (top, right, bottom, left).
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-rectangle.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/triangle-rectangle.js"
 ></script>
 ```
 
@@ -499,7 +499,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-up.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/triangle-up.js"
 ></script>
 ```
 
@@ -566,7 +566,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-down.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/triangle-down.js"
 ></script>
 ```
 
@@ -633,7 +633,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-left.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/triangle-left.js"
 ></script>
 ```
 
@@ -700,7 +700,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.0/dist/triangle-right.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.1/dist/triangle-right.js"
 ></script>
 ```
 
