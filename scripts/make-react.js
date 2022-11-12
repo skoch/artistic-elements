@@ -12,7 +12,7 @@ const { outdir } = commandLineArgs({ name: 'outdir', type: String });
 
 const reactDir = path.join('./src/react');
 
-// Clear build directory
+// Clear react directory
 deleteSync(reactDir);
 fs.mkdirSync(reactDir, { recursive: true });
 

@@ -14,6 +14,7 @@ const { bundle, dir, types } = commandLineArgs([
 
 const outdir = dir;
 
+// Clear build directory
 deleteSync(outdir);
 fs.mkdirSync(outdir, { recursive: true });
 
@@ -54,11 +55,6 @@ fs.mkdirSync(outdir, { recursive: true });
       chunkNames: 'chunks/[name].[hash]',
       // incremental: serve,
       incremental: false,
-      define: {
-        // Floating UI requires this to be set
-        'process.env.NODE_ENV': '"production"',
-      },
-      // minify: true,
       bundle: true,
       //
       // We don't bundle certain dependencies in the unbundled build. This ensures we ship bare module specifiers,
@@ -66,7 +62,6 @@ fs.mkdirSync(outdir, { recursive: true });
       //
       // We never bundle React or @lit-labs/react though!
       //
-      // external: alwaysExternal,
       external: bundle ? alwaysExternal : [...alwaysExternal, 'lit'],
       splitting: true,
       plugins: [],
@@ -75,12 +70,6 @@ fs.mkdirSync(outdir, { recursive: true });
       console.error(chalk.red(err));
       process.exit(1);
     });
-
-  // Copy the build output to an additional directory
-  // if (copydir) {
-  //   deleteSync(copydir);
-  //   copy(outdir, copydir);
-  // }
 
   console.log(chalk.green(`The build has been generated at ${outdir} 📦\n`));
 
