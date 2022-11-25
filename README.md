@@ -61,7 +61,7 @@ _Note: Remove '.min' from the path to use the unminified version from jsDeliver.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/index.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/index.min.js"
 ></script>
 ```
 
@@ -100,7 +100,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/circular.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/circular.min.js"
 ></script>
 ```
 
@@ -159,7 +159,7 @@ To create a circle, use the same values for `width` and `height`.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/circular-gradient.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/circular-gradient.min.js"
 ></script>
 ```
 
@@ -232,7 +232,7 @@ Ability to position absolutely if either a top or left value is supplied.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/doughnut.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/doughnut.min.js"
 ></script>
 ```
 
@@ -288,7 +288,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/rectangle.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/rectangle.min.js"
 ></script>
 ```
 
@@ -357,7 +357,7 @@ Ability to `align` which maps to `align-self` for flexbox.
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/rectangle-gradient.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/rectangle-gradient.min.js"
 ></script>
 ```
 
@@ -427,7 +427,7 @@ The colors map to each of the borders (top, right, bottom, left).
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/triangle-rectangle.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/triangle-rectangle.min.js"
 ></script>
 ```
 
@@ -500,7 +500,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/triangle-up.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/triangle-up.min.js"
 ></script>
 ```
 
@@ -567,7 +567,7 @@ If the `height` is 2x the value of `widthLeft` and `widthRight` (and both `width
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/triangle-down.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/triangle-down.min.js"
 ></script>
 ```
 
@@ -634,7 +634,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/triangle-left.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/triangle-left.min.js"
 ></script>
 ```
 
@@ -701,7 +701,7 @@ If the `width` is 2x the value of `heightTop` and `heightBottom` (and both `heig
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/artistic-elements@1.1.2/dist/artistic/triangle-right.min.js"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/triangle-right.min.js"
 ></script>
 ```
 
