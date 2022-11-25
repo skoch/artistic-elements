@@ -4,6 +4,9 @@ import { customElement, property } from 'lit/decorators.js';
 @customElement('artistic-circular')
 export class ArtisticCircular extends LitElement {
   static styles = css`
+    :host {
+      display: contents;
+    }
     div {
       border-radius: 50%;
       display: flex;
