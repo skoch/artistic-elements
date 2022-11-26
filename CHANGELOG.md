@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.4] - 2022-11-26
+
+### Updated
+
+- added display contents for circular, like others
+- allows for precentage for width and height
+- completely forgot to actually build with 1.1.3
+
 ## [1.1.1] - 2022-11-12
 
 ### Added
