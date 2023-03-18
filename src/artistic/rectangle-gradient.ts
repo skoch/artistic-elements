@@ -38,6 +38,9 @@ export class ArtisticRectangleGradient extends LitElement {
   @property()
   align = 'initial';
 
+  @property()
+  'border-radius' = '0';
+
   render() {
     const style = `
       width: ${this.width};
@@ -53,7 +56,13 @@ export class ArtisticRectangleGradient extends LitElement {
       ${this.top !== '0' || this.left !== '0' ? 'position: absolute;' : ''}
       ${this.top !== '0' ? `top: ${this.top};` : ''}
       ${this.left !== '0' ? `left: ${this.left};` : ''}
+      ${
+        this['border-radius'] !== '0'
+          ? `border-radius: ${this['border-radius']};`
+          : ''
+      }
     `;
+
     return html`<div style="${style}">
       <slot></slot>
     </div>`;

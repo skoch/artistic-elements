@@ -274,14 +274,15 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-| Attribute | Description          | Type     | default   |
-| --------- | -------------------- | -------- | --------- |
-| width     | object width         | `string` | '10rem'   |
-| height    | object height        | `string` | '10rem'   |
-| color     | object color         | `string` | '#f0f'    |
-| top       | object top position  | `string` | '0'       |
-| left      | object left position | `string` | '0'       |
-| align     | object alignment     | `string` | 'initial' |
+| Attribute     | Description          | Type     | default   |
+| ------------- | -------------------- | -------- | --------- |
+| width         | object width         | `string` | '10rem'   |
+| height        | object height        | `string` | '10rem'   |
+| color         | object color         | `string` | '#f0f'    |
+| top           | object top position  | `string` | '0'       |
+| left          | object left position | `string` | '0'       |
+| align         | object alignment     | `string` | 'initial' |
+| border-radius | object border radius | `string` | '0'       |
 
 #### Import
 
@@ -341,16 +342,17 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-| Attribute | Description          | Type     | default   |
-| --------- | -------------------- | -------- | --------- |
-| width     | object width         | `string` | '10rem'   |
-| height    | object height        | `string` | '10rem'   |
-| angle     | object rotation      | `string` | '0deg'    |
-| color     | object first color   | `string` | '#f0f'    |
-| color2    | object second color  | `string` | '#0f0'    |
-| top       | object top position  | `string` | '0'       |
-| left      | object left position | `string` | '0'       |
-| align     | object alignment     | `string` | 'initial' |
+| Attribute     | Description          | Type     | default   |
+| ------------- | -------------------- | -------- | --------- |
+| width         | object width         | `string` | '10rem'   |
+| height        | object height        | `string` | '10rem'   |
+| angle         | object rotation      | `string` | '0deg'    |
+| color         | object first color   | `string` | '#f0f'    |
+| color2        | object second color  | `string` | '#0f0'    |
+| top           | object top position  | `string` | '0'       |
+| left          | object left position | `string` | '0'       |
+| align         | object alignment     | `string` | 'initial' |
+| border-radius | object border radius | `string` | '0'       |
 
 #### Import
 
