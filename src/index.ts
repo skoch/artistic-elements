@@ -8,3 +8,4 @@ export { ArtisticTriangleRight } from './artistic/triangle-right.js';
 export { ArtisticCircularGradient } from './artistic/circular-gradient.js';
 export { ArtisticRectangleGradient } from './artistic/rectangle-gradient.js';
 export { ArtisticTriangleRectangle } from './artistic/triangle-rectangle.js';
+export { ArtisticRadialCircularGradient } from './artistic/radial-circular-gradient.js';

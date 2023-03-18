@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>artistic-radial-circular-gradient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+      media="all"
+    />
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #222324;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <script
+      type="module"
+      src="../../dist/artistic/radial-circular-gradient.js"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <artistic-radial-circular-gradient
+        width="20rem"
+        height="20rem"
+        colors='["#fff", "#ff0073", "#ffbd00", "#222324"]'
+        stops="[0, 0.4, 0.5, 0.7]"
+      ></artistic-radial-circular-gradient>
+    </main>
+  </body>
+</html>
