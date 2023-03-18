@@ -274,14 +274,15 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-| Attribute | Description          | Type     | default   |
-| --------- | -------------------- | -------- | --------- |
-| width     | object width         | `string` | '10rem'   |
-| height    | object height        | `string` | '10rem'   |
-| color     | object color         | `string` | '#f0f'    |
-| top       | object top position  | `string` | '0'       |
-| left      | object left position | `string` | '0'       |
-| align     | object alignment     | `string` | 'initial' |
+| Attribute     | Description          | Type     | default   |
+| ------------- | -------------------- | -------- | --------- |
+| width         | object width         | `string` | '10rem'   |
+| height        | object height        | `string` | '10rem'   |
+| color         | object color         | `string` | '#f0f'    |
+| top           | object top position  | `string` | '0'       |
+| left          | object left position | `string` | '0'       |
+| align         | object alignment     | `string` | 'initial' |
+| border-radius | object border radius | `string` | '0'       |
 
 #### Import
 
@@ -341,16 +342,17 @@ Ability to `align` which maps to `align-self` for flexbox.
 
 #### Attributes
 
-| Attribute | Description          | Type     | default   |
-| --------- | -------------------- | -------- | --------- |
-| width     | object width         | `string` | '10rem'   |
-| height    | object height        | `string` | '10rem'   |
-| angle     | object rotation      | `string` | '0deg'    |
-| color     | object first color   | `string` | '#f0f'    |
-| color2    | object second color  | `string` | '#0f0'    |
-| top       | object top position  | `string` | '0'       |
-| left      | object left position | `string` | '0'       |
-| align     | object alignment     | `string` | 'initial' |
+| Attribute     | Description          | Type     | default   |
+| ------------- | -------------------- | -------- | --------- |
+| width         | object width         | `string` | '10rem'   |
+| height        | object height        | `string` | '10rem'   |
+| angle         | object rotation      | `string` | '0deg'    |
+| color         | object first color   | `string` | '#f0f'    |
+| color2        | object second color  | `string` | '#0f0'    |
+| top           | object top position  | `string` | '0'       |
+| left          | object left position | `string` | '0'       |
+| align         | object alignment     | `string` | 'initial' |
+| border-radius | object border radius | `string` | '0'       |
 
 #### Import
 
@@ -741,5 +743,74 @@ import { ArtisticTriangleRight } from 'artistic-elements/dist/react';
   heightBottom="10rem"
   width="20rem"
   color="#fff"
+/>
+```
+
+### Radial Circular Gradient
+
+A simple circular object which supports an array of colors with a corresponding array of stops.
+
+Colors array used to create a radial gradient.
+
+Stops array values between `0` and `1`.
+
+Stops array must have the same length as the colors array.
+
+To create a circle, use the same values for `width` and `height`.
+
+#### Attributes
+
+| Attribute | Description                                 | Type     | Default          |
+| --------- | ------------------------------------------- | -------- | ---------------- |
+| width     | object width                                | `string` | '10rem'          |
+| height    | object height                               | `string` | '10rem'          |
+| colors    | object colors for radial-gradient           | `array`  | ["#f0f", "#ff0"] |
+| stops     | object position of color in radial-gradient | `array`  | [0, 1]           |
+
+#### Import
+
+```html
+<script
+  type="module"
+  src="https://cdn.jsdelivr.net/npm/artistic-elements/dist/artistic/circular-gradient.min.js"
+></script>
+```
+
+#### HTML
+
+```html
+<artistic-radial-circular-gradient></artistic-radial-circular-gradient>
+<artistic-radial-circular-gradient
+  width="20rem"
+  height="20rem"
+  colors='["#f0f", "#0f0"]'
+  stops="[0, 1]"
+></artistic-radial-circular-gradient>
+```
+
+#### Javascript API
+
+```javascript
+import { ArtisticRadialCircleGradient } from 'artistic-elements';
+
+const radialCircleGradient = new ArtisticRadialCircleGradient();
+radialCircleGradient.width = '20rem';
+radialCircleGradient.height = '20rem';
+radialCircleGradient.colors = ['#f0f', '#ff0'];
+radialCircleGradient.stops = [0, 1];
+document.querySelector('main').append(radialCircleGradient);
+```
+
+#### React API
+
+```jsx
+import { ArtisticRadialCircleGradient } from 'artistic-elements/dist/react';
+
+<ArtisticRadialCircleGradient />
+<ArtisticRadialCircleGradient
+  width="20rem"
+  height="20rem"
+  colors={["#f0f", "#0f0"]}
+  stops={[0, 1]}
 />
 ```
