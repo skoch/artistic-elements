@@ -22,25 +22,26 @@ export class ArtisticRadialCircularGradient extends LitElement {
   @property()
   height = '10rem';
 
-  @property()
-  colors = '["#f0f", "#ff0"]';
+  @property({ type: Array })
+  colors = ['#f0f', '#ff0'];
 
-  @property()
-  stops = '[0, 1]';
+  @property({ type: Array })
+  stops = [0, 1];
 
   render() {
-    const colorsArr = JSON.parse(this.colors);
-    const stopsArr = JSON.parse(this.stops);
-    const colors =
-      colorsArr.length !== stopsArr.length
-        ? `${colorsArr[0]} 0, ${colorsArr[1]} 100%`
-        : colorsArr
-            .map((c: string, i: number) => `${c} ${stopsArr[i] * 100}%`)
-            .join(', ');
+    const { colors, stops } = this;
+    // set the background if we have the correct number of stops / colors
+    // if not, use default values
     const style = `
       width: ${this.width};
       height: ${this.height};
-      background: radial-gradient(circle at center, ${colors})
+      background: radial-gradient(circle at center, ${
+        colors.length !== stops.length
+          ? `${colors[0]} 0, ${colors[1]} 100%`
+          : colors
+              .map((c: string, i: number) => `${c} ${stops[i] * 100}%`)
+              .join(', ')
+      })
     `;
     return html`<div style="${style}">
       <slot></slot>
